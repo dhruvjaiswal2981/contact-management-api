@@ -1,14 +1,17 @@
 const express = require("express");
-const dotenv = require("dotenv");
-const contactRoutes = require("./routes/contactRoutes");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const contactRoutes = require("./routes/contacts");
 
-dotenv.config();
 const app = express();
 
-app.use(express.json());
+// Middleware
+app.use(cors());
+app.use(bodyParser.json());
 app.use("/", contactRoutes);
 
-const PORT = process.env.PORT || 3306;
+// Start server
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
