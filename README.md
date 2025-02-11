@@ -25,8 +25,8 @@ This is a Node.js and Express.js backend application for managing contacts. It a
 ## Installation & Setup
 
 ### Prerequisites
-- Install **Node.js** & **MySQL** on your system.
-- Create a MySQL database.
+- Install **Node.js** & **SQLite3** on your system.
+- Create a SQLITE database.
 
 ### Steps to Setup
 1. **Clone the Repository**
@@ -40,7 +40,7 @@ This is a Node.js and Express.js backend application for managing contacts. It a
    ```
 3. **Configure Database**
    - Create a MySQL database named `contact_db`.
-   - Update `config/db.js` with your MySQL credentials.
+   - Update `database/database.js` with your SQL credentials.
    ```javascript
    module.exports = {
      host: "localhost",
