@@ -1,20 +1,24 @@
-# Contact Management API
+# Contact Management Application Backend
 
 ## Overview
-This is a Contact Management API built using **Node.js** and **Express.js** with **MySQL** as the database. The API allows users to **create, update, delete, view, and search contacts**.
+This is a Node.js and Express.js backend application for managing contacts. It allows users to add, update, delete, and fetch contacts stored in an SQLite3 database.
 
 ## Features
-- **CRUD Operations**: Create, Read, Update, and Delete contacts.
-- **Search Contacts**: Search contacts by name or email.
-- **Data Validation**: Uses `express-validator` for input validation.
-- **Error Handling**: Proper error messages for missing fields or invalid requests.
-- **MySQL Database**: Stores all contacts with a unique `id`.
+✔️ Fetch all contacts
+✔️ Add a new contact
+✔️ Get a contact by ID
+✔️ Update a contact
+✔️ Delete a contact
+✔️ Search contacts by name or email
+✔️ Input validation using express-validator
+✔️ Error handling with proper HTTP status codes
 
 ## Technologies Used
-- **Node.js**
-- **Express.js**
-- **MySQL**
-- **express-validator**
+- Backend: Node.js, Express.js
+- Database: SQLite3
+- Validation: express-validator
+- Middleware: CORS, body-parser
+
 
 ---
 
@@ -152,22 +156,21 @@ INSERT INTO contacts (name, email, phone, address, created_at) VALUES
 
 ## Folder Structure
 ```
-📂 contact-management-api
-├── 📂 config
-│   ├── db.js  (Database configuration)
-├── 📂 controllers
-│   ├── contactController.js (API logic)
-├── 📂 models
-│   ├── Contact.js  (Database Model)
-├── 📂 routes
-│   ├── contactRoutes.js (Routes definition)
-├── server.js (Entry point)
-├── package.json
-├── README.md (This file)
+/contact-management-backend
+│── /database
+│   ├── database.js
+│── /routes
+│   ├── contacts.js
+│── /controllers
+│   ├── contactsController.js
+│── server.js
+│── README.md
+│── package.json
+
 ```
 
 ---
 
 ## Deployment
 - Live Demo: The application is hosted on Render.
-- Access it here: 
+- Access it here: https://contact-management-api-i4ql.onrender.com
