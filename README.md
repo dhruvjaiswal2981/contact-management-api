@@ -77,7 +77,8 @@ http://localhost:5000/contacts
   }
 ]
 ```
-![BLACKWINSTECH GET Preview](images/Blackwinstech GET.PNG)
+![BLACKWINSTECH GET Preview](images/Blackwinstech_GET.PNG)
+
 
 
 ### 2. Get Single Contact
