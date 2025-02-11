@@ -77,7 +77,7 @@ http://localhost:5000/contacts
   }
 ]
 ```
-![BLACKWINSTECH GET Preview](images/Blackwinstech_GET.PNG)
+![BLACKWINSTECH GET Preview](images/Blackwinstech GET.PNG)
 
 
 
