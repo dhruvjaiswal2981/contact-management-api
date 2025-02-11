@@ -63,8 +63,6 @@ This is a Contact Management API built using **Node.js** and **Express.js** with
 **Endpoint:** `GET /contacts`
 ```http
 http://localhost:5000/contacts
-
-![BLACKWINSTECH GET Preview](images/Blackwinstech GET.PNG)
 ```
 **Response:**
 ```json
@@ -79,6 +77,8 @@ http://localhost:5000/contacts
   }
 ]
 ```
+![BLACKWINSTECH GET Preview](images/Blackwinstech GET.PNG)
+
 
 ### 2. Get Single Contact
 **Endpoint:** `GET /contacts/:id`
@@ -162,6 +162,6 @@ INSERT INTO contacts (name, email, phone, address, created_at) VALUES
 
 ---
 
-Deployment
-Live Demo: The application is hosted on Render.
-Access it here: 
+## Deployment
+- Live Demo: The application is hosted on Render.
+- Access it here: 
