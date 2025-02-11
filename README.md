@@ -69,13 +69,22 @@ http://localhost:5000/contacts
 [
   {
     "id": 1,
-    "name": "Alice Johnson",
-    "email": "alice@example.com",
-    "phone": "555-666-7777",
-    "address": "789 Pine St, TX",
-    "created_at": "2024-02-11T10:10:00.000Z"
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main St, NY",
+    "created_at": "2024-02-11T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "phone": "987-654-3210",
+    "address": "456 Oak St, CA",
+    "created_at": "2024-02-11T10:05:00.000Z"
   }
 ]
+
 ```
 ![BLACKWINSTECH GET Preview](images/Blackwinstech_GET.PNG)
 
@@ -91,9 +100,6 @@ http://localhost:5000/contacts/1
 **Endpoint:** `POST /contacts`
 ```http
 http://localhost:5000/contacts
-
-![BLACKWINSTECH POST Preview](images/Blackwinstech POST.PNG)
-
 ```
 **Request Body:**
 ```json
@@ -105,27 +111,26 @@ http://localhost:5000/contacts
 }
 ```
 
+![BLACKWINSTECH POST Preview](images/Blackwinstech_POST.PNG)
+
 ### 4. Update a Contact
 **Endpoint:** `PUT /contacts/:id`
 ```http
 http://localhost:5000/contacts/3
-
-![BLACKWINSTECH PUT Preview](images/Blackwinstech PUT.PNG)
-
 ```
 **Request Body:**
 ```json
 { "message": "Contact updated successfully" }
 ```
+![BLACKWINSTECH PUT Preview](images/Blackwinstech_PUT.PNG)
 
 ### 5. Delete a Contact
 **Endpoint:** `DELETE /contacts/:id`
 ```http
 http://localhost:5000/contacts/5
-
-![BLACKWINSTECH DELETE Preview](images/Blackwinstech DELETE.PNG)
-
 ```
+
+![BLACKWINSTECH DELETE Preview](images/Blackwinstech_DELETE.PNG)
 
 ### 6. Search Contacts (By Name or Email)
 **Endpoint:** `GET /contacts/search?query=Alice`
